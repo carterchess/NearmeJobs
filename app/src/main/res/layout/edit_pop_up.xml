@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:rsv="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/list_item_shape"
+        android:orientation="vertical"
+        android:layout_height="400dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <com.modernizeworkers.jobapplication.customviews.JATextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Edit Your Job Search"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/popupCloseView"
+                    android:src="@drawable/ic_close_imge" />
+            </RelativeLayout>
+
+            <com.modernizeworkers.jobapplication.customviews.JATextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:text="What job you looking for?"
+                android:textColor="#ff000000"
+                android:textSize="16sp" />
+
+            <com.modernizeworkers.jobapplication.customviews.JAEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="16dp"
+                android:hint="Enter your job"
+                android:singleLine="true"
+                android:padding="5dp"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/ic_work"
+                android:id="@+id/jobTypeEditText"
+                android:background="@drawable/edit_text_back_ground"
+                android:orientation="horizontal"
+                >
+
+
+            </com.modernizeworkers.jobapplication.customviews.JAEditText>
+
+            <com.modernizeworkers.jobapplication.customviews.JATextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:text="Where are looking to work?"
+                android:id="@+id/kmTextView"
+                android:textColor="#FF333333"
+                android:textSize="16sp"
+
+                />
+
+            <com.modernizeworkers.jobapplication.customviews.JAEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="16dp"
+                android:hint="Work location"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/ic_icon_location_map"
+                android:id="@+id/jobLocationEditText"
+                android:background="@drawable/edit_text_back_ground"
+                android:orientation="horizontal"
+                />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/applyEditButton"
+                android:background="@drawable/sorting_selected_button"
+                android:text="APPLY"
+                android:textColor="#FFFFFFFF"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

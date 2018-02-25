@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/relayoutMapButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/textColor">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/textColor"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/imageViewRestaurantMapIn"
+            android:layout_width="49dp"
+            android:layout_height="43dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_icon_location_map" />
+
+        <com.modernizeworkers.jobapplication.customviews.JATextView
+            android:id="@+id/locationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/imageViewRestaurantMapIn"
+            android:text="name"
+            android:textColor="#454545"
+            android:textSize="15dp" />
+
+        <com.modernizeworkers.jobapplication.customviews.JATextView
+            android:id="@+id/locationdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/locationTitle"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/imageViewRestaurantMapIn"
+            android:text="addres"
+            android:textColor="#929292"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+</LinearLayout>

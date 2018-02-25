@@ -1,0 +1,274 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.modernizeworkers.jobapplication.fragments.JobListingFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/listing_drawable_gradient"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="7">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:id="@+id/filterImageView"
+                    android:src="@drawable/ic_icon_filter" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <com.modernizeworkers.jobapplication.customviews.JATextView
+                        android:id="@+id/jobNameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawablePadding="5dp"
+                        android:maxLength="15"
+                        android:ellipsize="end"
+                        android:drawableLeft="@drawable/ic_work_white"
+                        android:gravity="center"
+                        android:text="android"
+                        android:textColor="@color/textColor"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:id="@+id/editImageView"
+                    android:src="@drawable/ic_icon_edit" />
+            </LinearLayout>
+
+            <com.modernizeworkers.jobapplication.customviews.JATextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_icon_location"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:maxLength="15"
+                android:ellipsize="end"
+                android:text="kochi"
+                android:id="@+id/jobLocationTextView"
+                android:textColor="@color/textColor"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="110dp"
+            android:layout_marginBottom="60dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/jobListRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:outlineProvider="bounds"
+                    android:scrollbars="none" />
+                <ProgressBar
+                    android:layout_width="40dp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/mJobListProgressBar"
+                    android:visibility="gone"
+                    android:layout_height="40dp" />
+
+                <com.modernizeworkers.jobapplication.customviews.JATextView
+                    android:layout_width="wrap_content"
+                    android:text="Sorry! no jobs available"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/noJobsTextView"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#ffffff"
+            android:layout_alignParentBottom="true"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/layOutViewAll"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/viewAllImageView"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_icon_home" />
+
+                <com.modernizeworkers.jobapplication.customviews.JATextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="View All"
+                    android:id="@+id/viewAllTextView"
+                    android:textColor="@color/bottomNavigationItemColor"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/layOutFullTime"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/fullTimeImageView"
+                    android:src="@drawable/ic_fulltime" />
+
+                <com.modernizeworkers.jobapplication.customviews.JATextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Full Time"
+                    android:id="@+id/fullTimeTextView"
+                    android:textColor="@color/bottomNavigationItemColor"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/layOutpartTime"
+
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/partTimeImageView"
+                    android:src="@drawable/parttime" />
+
+                <com.modernizeworkers.jobapplication.customviews.JATextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Part Time"
+                    android:id="@+id/partTimeTextView"
+                    android:textColor="@color/bottomNavigationItemColor"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/layOutFreelance"
+
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/freelanceImageView"
+                    android:src="@drawable/freelance" />
+
+                <com.modernizeworkers.jobapplication.customviews.JATextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Freelance"
+                    android:id="@+id/freeLanceTextView"
+                    android:textColor="@color/bottomNavigationItemColor"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/layOutInternShip"
+
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/internShipImageView"
+                    android:src="@drawable/internship" />
+
+                <com.modernizeworkers.jobapplication.customviews.JATextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/internShipTextView"
+                    android:text="Internship"
+                    android:textColor="@color/bottomNavigationItemColor"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

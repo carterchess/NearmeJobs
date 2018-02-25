@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.modernizeworkers.jobapplication.activities.RequirementCollectionActivity">
+
+
+    <LinearLayout
+        android:id="@+id/nameAndImageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/splashBackground"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/app_icon" />
+
+        <com.modernizeworkers.jobapplication.customviews.JATextView
+            android:layout_width="wrap_content"
+            android:text="Near Jobs"
+            android:textSize="@dimen/splash_screen_app_name_text_size"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

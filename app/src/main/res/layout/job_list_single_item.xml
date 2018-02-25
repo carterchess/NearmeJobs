@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="5dp"
+        android:outlineProvider="bounds"
+        android:clipToPadding="false"
+        android:id="@+id/jobContainerLinearLayout"
+        android:background="@drawable/list_item_shape"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/left_side_gradient" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+
+            <com.modernizeworkers.jobapplication.customviews.JATextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:ellipsize="end"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:text="Mobile and Web UI/UX Architect"
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/jobTitleTextView"
+                android:textSize="20dp" />
+
+            <com.modernizeworkers.jobapplication.customviews.JATextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Unique Computer System"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textColor="@color/listingPageCompanyNameTextColor"
+                android:id="@+id/companyNameTextView"
+                android:textSize="14dp" />
+
+            <com.modernizeworkers.jobapplication.customviews.JATextView
+                android:id="@+id/LocationTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="15dp"
+                android:text="Kochi"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textColor="@color/listingPageLocationNameTextColor"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

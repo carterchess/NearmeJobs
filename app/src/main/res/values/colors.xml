@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#F2205A</color>-->
+    <!--<color name="colorPrimaryDark">#F2205A</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <!--<color name="textColor">#FFFFFFFF</color>-->
+    <!--<color name="textColorButton">#FFF2205A</color>-->
+    <!--<color name="transparent">#00000000</color>-->
+    <!--<color name="bottomItemColorSelected">#FFF2205A</color>-->
+    <!--<color name="bottomItemColorUnSelected">#FFCCCCCC</color>-->
+    <!--<color name="splashBackground">#EF2865</color>-->
+
+
+
+
+    <color name="colorPrimary">#3D5AFE</color>
+    <color name="colorPrimaryDark">#2164f3</color>
+    <color name="colorAccent">#2164f3</color>
+    <color name="textColor">#FFFFFFFF</color>
+    <color name="textColorButton">#1A237E</color>
+    <color name="transparent">#00000000</color>
+    <color name="bottomItemColorSelected">#2164f3</color>
+    <color name="bottomItemColorUnSelected">#FFCCCCCC</color>
+    <color name="splashBackground">#0D47A1</color>
+
+    <color name="gradientStartColor">#536DFE</color>
+    <color name="gradientEndColor">#2164f3</color>
+    <color name="fillcolor">#CCCCCC</color>
+    <color name="fillcolorDark">#FFCCCCCC</color>
+    <color name="fillcolorlocation">#FFFCEBED</color>
+    <color name="listingPageCompanyNameTextColor">#FFA5A5A5</color>
+    <color name="listingPageLocationNameTextColor">#FF333333</color>
+    <color name="fulltimeText">#FF333333</color>
+    <color name="jobTypeTextColor">#FFA5A5A5</color>
+    <color name="jobDetailsPageViewColor">#FFEFEFEF</color>
+    <color name="jobDetailsPagePostedColor">#FFA5A5A5</color>
+    <color name="jobDetailsPageDescriptionLabelColor">#FFA5A5A5</color>
+    <color name="jobDetailsPageDescriptionColor">#FF333333</color>
+    <color name="jobDetailsPageCompanyLabelColor">#FFA5A5A5</color>
+    <color name="bottomNavigationItemColor">#FFCCCCCC</color>
+
+
+
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:rsv="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/list_item_shape"
+        android:orientation="vertical"
+        android:layout_height="400dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <com.modernizeworkers.jobapplication.customviews.JATextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Filter Page"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/closePopupImageView"
+                android:src="@drawable/ic_close_imge" />
+        </RelativeLayout>
+
+        <com.modernizeworkers.jobapplication.customviews.JATextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Sorting option"
+            android:textColor="#ff000000"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/sorting_option_background"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="Date"
+                android:id="@+id/dateButton"
+                android:textAllCaps="false"
+                android:textColor="@color/textColorButton"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/sorting_selected_button"
+                android:text="Relevance"
+                android:id="@+id/relevanceButton"
+                android:textAllCaps="false"
+                android:textColor="@color/textColor" />
+        </LinearLayout>
+
+        <com.modernizeworkers.jobapplication.customviews.JATextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:text="Jobs within 25Kms"
+            android:id="@+id/kmTextView"
+            android:textColor="#FF333333"
+            android:textSize="16sp"
+
+            />
+
+        <com.github.channguyen.rsv.RangeSliderView
+            android:id="@+id/kmLimitSeekbar"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            rsv:rangeCount="5"
+
+            rsv:filledColor="@color/colorPrimaryDark"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/applyFilterButton"
+            android:background="@drawable/sorting_selected_button"
+            android:text="APPLY FILTERS"
+            android:textColor="#FFFFFFFF"
+            android:layout_height="50dp" />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

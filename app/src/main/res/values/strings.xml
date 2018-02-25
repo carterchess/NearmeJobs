@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Near Jobs</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_job_container">JobContainerActivity</string>
+
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="full_time_text">Full Time</string>
+    <string name="job_type_text_label">Job Type</string>
+</resources>
